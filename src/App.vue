@@ -2,7 +2,7 @@
   <section class="main-app">
     <app-header />
     <app-body />
-    <app-footer />
+    <!-- <app-footer /> -->
   </section>
 </template>
 

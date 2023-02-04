@@ -1,0 +1,54 @@
+.moon-cal {
+
+    .location-picker {
+        position: fixed;
+    }
+
+    .weekdays {
+        width: 100%;
+        position: fixed;
+        display: flex;
+
+        .day-title {
+            width: 100%;
+            border: 1px solid black;
+            text-align: center;
+            background-color: #c5ff9e;
+        }
+    }
+
+    .moon-cal-days {
+        color: whitesmoke;
+        background-color: black;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 2px;
+
+        .moon-day-preview {
+            font-size: .8em;
+            padding: .3em;
+            text-align: center;
+            border-radius: 2px;
+
+            .moon-icon {
+                margin: auto;
+                margin-bottom: .5em;
+                margin-top: .5em;
+                background-color: black;
+                width: 2em;
+                height: 2em;
+                border-radius: 50%;
+            }
+        }
+
+        .times {
+            // .first-horiz-cross {
+            //     text-align: left;
+            // }
+            // .second-horize-cross {
+            //     text-align: right;
+            // }
+        }
+    }
+
+}
