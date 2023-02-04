@@ -1,0 +1,16 @@
+{
+    "name": "Second Brain",
+    "short_name": "SB",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#00d3c8",
+    "theme_color": "#00d3c8",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "src/assets/icons/brain.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
+}

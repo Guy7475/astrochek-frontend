@@ -1,0 +1,25 @@
+.app-header {
+    position: fixed;
+    width: 100%;
+    height: $headerHeight;
+    padding: 0 1em;
+    background-color: $appColorDarker;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .desktop-menu {
+        display: none;
+    }
+    
+    @media (min-width: 750px) {
+        .hamb-menu,
+        .hamb-icon {
+            display: none;
+        }
+
+        .desktop-menu {
+            display: inline-block;
+        }
+    }
+}
