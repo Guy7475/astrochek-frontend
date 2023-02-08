@@ -1,23 +1,31 @@
 .moon-cal {
+    * {
+        color: whitesmoke;
+    }
 
-    .location-picker {
-        position: fixed;
+    .moon-cal-header {
+        * {
+            background-color: black;
+        }
+
+        position: sticky;
+        top: $headerHeight;
+        background-color: black;
     }
 
     .weekdays {
         width: 100%;
-        position: fixed;
         display: flex;
 
         .day-title {
             width: 100%;
-            border: 1px solid black;
+            border: 1px solid rgba(255, 255, 255, 0.205);
             text-align: center;
-            background-color: #c5ff9e;
+            background-color: black;
         }
     }
 
-    .moon-cal-days {
+    .moon-cal-days-grid {
         color: whitesmoke;
         background-color: black;
         display: grid;
@@ -49,6 +57,60 @@
             //     text-align: right;
             // }
         }
+
     }
 
+    .overlay {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.75);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .moon-details {
+        display: flex;
+        overflow: scroll;
+        width: 90vw;
+        position: fixed;
+        margin: auto;
+        
+        color: whitesmoke;
+        background-color: black;
+        
+        .moon-day-details {
+            width: 60vw;
+            height: 50vh;
+            font-size: .8em;
+            padding: .3em;
+            text-align: center;
+            border: 1px solid black;
+
+            .moon-icon {
+                margin: auto;
+                margin-bottom: .5em;
+                margin-top: .5em;
+                background-color: black;
+                width: 2em;
+                height: 2em;
+                border-radius: 50%;
+            }
+        }
+
+        .times {
+            // .first-horiz-cross {
+            //     text-align: left;
+            // }
+            // .second-horize-cross {
+            //     text-align: right;
+            // }
+        }
+
+    }
+    
+
 }
+

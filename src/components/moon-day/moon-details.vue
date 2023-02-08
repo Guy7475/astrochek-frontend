@@ -1,12 +1,15 @@
 <template>
-  <section class="moon-day-preview" :id="dayId" :style="dayPrevStyle">
-    <div class="day-preview-title">
-      {{ formatDate }}
+  <section class="moon-day-details" :id="dayId" :style="dayPrevStyle">
+    <div class="day-details-title">
+      <div class="day-name">{{day.dayName}}</div>
+      <div class="format-date">
+        {{ formatDate }}
+      </div>
     </div>
     <div class="illum">{{ moonIllum }}%</div>
     <div class="moon-icon" :style="moonShadow" />
 
-        <div class="moon">
+    <div class="moon">
       <div class="disc"></div>
     </div>
 
@@ -19,16 +22,14 @@
 
 <script>
 export default {
-  name: "moon-day-preview",
+  name: "moon-details",
   props: {
     proppedDay: Object,
   },
   data() {
     return {};
   },
-  methods: {
-
-  },
+  methods: {},
   computed: {
     day() {
       return JSON.parse(JSON.stringify(this.proppedDay));
@@ -50,7 +51,7 @@ export default {
       } else style += "background-color: #5a5a5a;";
 
       if (this.isToday) style += "background-color: navy;";
-      
+
       return style;
     },
     moonIllum() {
@@ -90,8 +91,7 @@ export default {
     },
   },
   created() {},
-  mounted() {
-  },
+  mounted() {},
   components: {},
 };
 </script>

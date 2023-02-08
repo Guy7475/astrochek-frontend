@@ -1,28 +1,21 @@
 <template>
-  <section class='astro-weather'>
+  <section class="astro-weather">
     I am astro-weather
   </section>
 </template>
 
 <script>
-
 export default {
-  name: 'astro-weather',
+  name: "astro-weather",
   props: {},
   data() {
-      return {
-         
-      };
+    return {};
   },
-  methods: {
+  methods: {},
+  computed: {},
+  created() {
 
   },
-  computed: {
-
-  },
-  created() {},
-  components: {
-
-  },
-}
+  components: {},
+};
 </script>
