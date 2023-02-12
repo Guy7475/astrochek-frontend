@@ -57,7 +57,7 @@ export default {
       return Math.round(this.day.moon.illum.fraction * 100);
     },
     formatDate() {
-      const formatDate = `${this.day.monthName} ${this.day.dayInMonth}, 2023`;
+      const formatDate = `${this.day.monthName} ${this.day.dayInMonth}`;
       return formatDate;
     },
     moonShadow() {

@@ -60,30 +60,19 @@
 
     }
 
-    .overlay {
-        position: fixed;
-        left: 0;
-        top: 0;
-        height: 100%;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.75);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .moon-details {
+
+    .day-details {
+        top: $headerHeight;
         display: flex;
         overflow: scroll;
-        width: 90vw;
         position: fixed;
         margin: auto;
-        
         color: whitesmoke;
         background-color: black;
+        width: 100vw;
         
         .moon-day-details {
-            width: 60vw;
-            height: 50vh;
+            height: 100vh;
             font-size: .8em;
             padding: .3em;
             text-align: center;

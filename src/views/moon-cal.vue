@@ -29,23 +29,21 @@
     </section>
     <section class="moon-cal-days-grid">
       <div v-for="day in moonCal" :key="day.date">
-        <moon-day-preview :proppedDay="day" />
+        <moon-day-preview :proppedDay="day" @click="openDayDetail(day.date)"/>
       </div>
     </section>
-    <div class="overlay">
-      <section class="moon-details">
-        <div v-for="day in moonCal" :key="day.date">
-          <moon-details :proppedDay="day" />
-        </div>
-      </section>
-    </div>
+    <section class="day-details">
+      <div v-for="day in moonCal" :key="day.date">
+        <day-details :proppedDay="day" />
+      </div>
+    </section>
   </section>
 </template>
 
 <script>
 import { moonCalService } from "../services/moonCalService";
 import moonDayPreview from "../components/moon-day/moon-day-preview.vue";
-import moonDetails from "../components/moon-day/moon-details.vue";
+import dayDetails from "../components/moon-day/day-details.vue";
 
 export default {
   name: "moon-cal",
@@ -57,6 +55,9 @@ export default {
     };
   },
   methods: {
+    openDayDetail(date) {
+      
+    },
     centerToday() {
       const todayDate = new Date().toISOString().slice(0, 10);
       document
@@ -91,7 +92,7 @@ export default {
   },
   components: {
     moonDayPreview,
-    moonDetails,
+    dayDetails,
   },
 };
 </script>

@@ -22,7 +22,7 @@
 
 <script>
 export default {
-  name: "moon-details",
+  name: "day-details",
   props: {
     proppedDay: Object,
   },
